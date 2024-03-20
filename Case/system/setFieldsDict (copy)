@@ -1,0 +1,3459 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  4.1                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      setFieldsDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+defaultFieldValues
+(
+    volScalarFieldValue alpha.water 0
+);
+
+regions
+(
+   boxToCell
+    {
+        box (0 0 -0.1) (2200e-6 700e-6 1350e-6);
+        fieldValues
+        (
+            volScalarFieldValue alpha.water 1
+        );
+    }
+    
+ sphereToCell
+{
+   centre (1.249900e-05 2.124980e-04 1.249800e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (3.764300e-05 2.124990e-04 1.335300e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (6.227200e-05 2.189850e-04 1.249600e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (8.936400e-05 2.149990e-04 1.499800e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.188900e-04 2.149980e-04 2.032900e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.594400e-04 2.149990e-04 1.925400e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.895500e-04 2.149990e-04 1.499900e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (2.427800e-04 2.199980e-04 1.999800e-05 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (2.779400e-04 2.124970e-04 1.249900e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (3.043400e-04 2.149980e-04 1.980600e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (3.627600e-04 2.149980e-04 1.504100e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.499900e-05 2.149980e-04 4.601500e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (5.867000e-05 2.199960e-04 4.477600e-05 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (8.785600e-05 2.149990e-04 6.497600e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (9.061800e-05 2.262740e-04 4.004800e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.103000e-04 2.124990e-04 4.695200e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.375100e-04 2.149970e-04 4.384200e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.793200e-04 2.149970e-04 4.319900e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (2.119100e-04 2.149960e-04 3.572200e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (2.349700e-04 2.124990e-04 5.064100e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (2.727900e-04 2.199970e-04 4.643800e-05 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (3.055400e-04 2.124990e-04 4.720100e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (3.355700e-04 2.199990e-04 3.650700e-05 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (3.590900e-04 2.149960e-04 6.206200e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.499900e-05 2.149980e-04 7.601400e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (6.284200e-05 2.124980e-04 7.612000e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (8.562700e-05 2.199980e-04 9.958600e-05 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.163300e-04 2.149990e-04 7.440700e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.412800e-04 2.252700e-04 6.907100e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.667500e-04 2.150000e-04 7.043500e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.820000e-04 2.124990e-04 9.318100e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (2.024100e-04 2.199960e-04 6.902700e-05 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (2.484400e-04 2.149970e-04 8.056800e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (2.684900e-04 2.243720e-04 9.689500e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (2.876200e-04 2.149990e-04 7.951200e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (3.283700e-04 2.124970e-04 6.729600e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (3.175200e-04 2.199980e-04 9.700200e-05 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (3.486600e-04 2.124990e-04 9.098000e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.500300e-05 2.149990e-04 1.145500e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (6.848300e-05 2.124970e-04 1.264300e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.171700e-04 2.124990e-04 1.017800e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.256000e-04 2.149950e-04 1.278400e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.511400e-04 2.199970e-04 1.024900e-04 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.807100e-04 2.149990e-04 1.205300e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (2.074600e-04 2.149980e-04 1.032900e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (2.324000e-04 2.124990e-04 1.147200e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (2.573800e-04 2.124990e-04 1.158800e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (2.862500e-04 2.124990e-04 1.103800e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (3.290100e-04 2.124970e-04 1.264600e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (3.675100e-04 2.124990e-04 1.074000e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.249600e-05 2.124990e-04 1.418200e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (3.875300e-05 2.149970e-04 1.340500e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (4.662900e-05 2.124980e-04 1.602800e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (7.916100e-05 2.199960e-04 1.572800e-04 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.100100e-04 2.124980e-04 1.503500e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.390700e-04 2.149970e-04 1.546400e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.566800e-04 2.124990e-04 1.336700e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.762600e-04 2.124980e-04 1.506000e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (2.107500e-04 2.199960e-04 1.377700e-04 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (2.465900e-04 2.149950e-04 1.442600e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (2.279400e-04 2.124960e-04 1.643100e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (2.676700e-04 2.124990e-04 1.618200e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (2.950000e-04 2.149990e-04 1.590000e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (3.209500e-04 2.124970e-04 1.501300e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (3.514000e-04 2.149980e-04 1.422200e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (3.733800e-04 2.149990e-04 1.626400e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (3.109900e-05 2.124980e-04 1.873800e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (5.838700e-05 2.149990e-04 1.850000e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.006400e-04 2.149990e-04 1.850000e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.274500e-04 2.124990e-04 1.794400e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.530800e-04 2.124990e-04 1.868600e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.879100e-04 2.199980e-04 1.800000e-04 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (2.186300e-04 2.125020e-04 1.875000e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (2.941500e-04 2.124980e-04 1.873100e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (3.191500e-04 2.124990e-04 1.875000e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (3.402800e-04 2.149980e-04 1.700900e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (3.618300e-04 2.124980e-04 1.874900e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (3.922300e-04 2.124970e-04 1.445200e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (4.325300e-04 2.149990e-04 1.500700e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (4.625300e-04 2.149970e-04 1.499800e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (4.976500e-04 2.124990e-04 2.027500e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (5.218200e-04 2.124990e-04 1.362000e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (5.078200e-04 2.297340e-04 9.999500e-06 );
+    radius 1.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (5.608300e-04 2.199980e-04 2.073700e-05 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (5.922100e-04 2.124980e-04 1.249900e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (6.350700e-04 2.124990e-04 1.249900e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (6.586400e-04 2.149980e-04 2.648300e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (6.863600e-04 2.149990e-04 1.500000e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (7.432900e-04 2.124980e-04 1.249900e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (3.795300e-04 2.149990e-04 3.993700e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (3.985400e-04 2.124990e-04 5.965100e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (4.147400e-04 2.124990e-04 3.769000e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (4.292600e-04 2.149990e-04 6.498700e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (4.491600e-04 2.149970e-04 4.184800e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (4.771000e-04 2.124990e-04 3.818500e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (4.955500e-04 2.149980e-04 5.842200e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (5.289000e-04 2.199960e-04 4.482500e-05 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (5.635500e-04 2.124980e-04 5.224100e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (5.925700e-04 2.149990e-04 3.988300e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (6.292400e-04 2.199980e-04 4.483400e-05 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (6.619700e-04 2.149990e-04 5.630000e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (6.970900e-04 2.199950e-04 5.109600e-05 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (7.267300e-04 2.124990e-04 4.003300e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (3.832500e-04 2.149970e-04 8.435400e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (4.134800e-04 2.149970e-04 9.058000e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (4.476800e-04 2.199960e-04 9.614500e-05 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (4.728300e-04 2.124990e-04 7.536000e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (4.982100e-04 2.124990e-04 9.172800e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (5.233400e-04 2.149980e-04 8.084200e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (5.492700e-04 2.177260e-04 7.208200e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (5.678200e-04 2.124990e-04 8.799500e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (6.089400e-04 2.124990e-04 6.995400e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (6.014600e-04 2.149950e-04 9.648100e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (6.354100e-04 2.124990e-04 7.584700e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (6.743900e-04 2.149970e-04 8.364300e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (7.007900e-04 2.149980e-04 9.789500e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (7.274700e-04 2.149990e-04 7.026700e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (3.942700e-04 2.252730e-04 1.073600e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (3.827800e-04 2.149990e-04 1.301300e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (4.206300e-04 2.199960e-04 1.256100e-04 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (4.625700e-04 2.124980e-04 1.263400e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (4.823500e-04 2.124990e-04 1.110500e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (5.090500e-04 2.149970e-04 1.171600e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (5.367600e-04 2.149990e-04 1.286600e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (5.411700e-04 2.124990e-04 1.016300e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (5.767500e-04 2.149980e-04 1.138900e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (6.038000e-04 2.149990e-04 1.268400e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (6.433300e-04 2.199970e-04 1.064600e-04 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (6.789100e-04 2.199980e-04 1.247500e-04 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (7.348600e-04 2.199980e-04 1.041100e-04 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (3.987700e-04 2.124990e-04 1.523600e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (4.248300e-04 2.149990e-04 1.607900e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (4.593800e-04 2.199970e-04 1.582700e-04 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (4.874700e-04 2.149970e-04 1.380000e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (5.224900e-04 2.124980e-04 1.521700e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (5.628900e-04 2.124980e-04 1.379200e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (5.720900e-04 2.149970e-04 1.647000e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (5.836600e-04 2.257350e-04 1.421900e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (6.041200e-04 2.149980e-04 1.592900e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (6.298200e-04 2.124980e-04 1.353800e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (6.754900e-04 2.149960e-04 1.592200e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (7.069400e-04 2.124990e-04 1.393800e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (7.087500e-04 2.124990e-04 1.643100e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (7.391700e-04 2.149980e-04 1.384800e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (4.019400e-04 2.149990e-04 1.850000e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (4.322100e-04 2.124990e-04 1.875000e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (4.973300e-04 2.199970e-04 1.713400e-04 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (5.295200e-04 2.149990e-04 1.844400e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (5.569300e-04 2.125000e-04 1.875000e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (5.926400e-04 2.124990e-04 1.871200e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (6.222100e-04 2.149990e-04 1.849100e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (6.510400e-04 2.149970e-04 1.766100e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (6.908100e-04 2.149980e-04 1.850000e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (7.180800e-04 2.124980e-04 1.875000e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (7.453500e-04 2.149960e-04 1.850000e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (7.828000e-04 2.149970e-04 1.880500e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (8.125600e-04 2.149980e-04 1.499800e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (8.468300e-04 2.200000e-04 1.999900e-05 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (9.045900e-04 2.185710e-04 1.500300e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (8.784400e-04 2.124970e-04 2.095300e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (9.312900e-04 2.124970e-04 1.249800e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (9.585500e-04 2.149980e-04 1.500300e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (9.842800e-04 2.245350e-04 1.314900e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.010000e-03 2.149990e-04 1.499900e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.047800e-03 2.124990e-04 2.179200e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.071100e-03 2.124990e-04 1.252200e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.096500e-03 2.124990e-04 1.314300e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.123200e-03 2.149990e-04 1.936000e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (7.582200e-04 2.199970e-04 4.320800e-05 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (7.862500e-04 2.149980e-04 6.442400e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (8.107700e-04 2.149970e-04 4.502100e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (8.378500e-04 2.124980e-04 5.031700e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (8.627400e-04 2.124990e-04 4.801600e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (8.967400e-04 2.199980e-04 6.587800e-05 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (9.154900e-04 2.124980e-04 3.992600e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (9.406100e-04 2.124980e-04 3.569100e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (9.722700e-04 2.199970e-04 4.829700e-05 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.027000e-03 2.149970e-04 3.970200e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.044000e-03 2.124980e-04 6.117000e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.077000e-03 2.199960e-04 4.721500e-05 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.108600e-03 2.124970e-04 4.608600e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (8.069200e-04 2.124980e-04 8.427000e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (7.844700e-04 2.149970e-04 9.995300e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (8.334200e-04 2.149960e-04 7.733900e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (8.633900e-04 2.149970e-04 7.541400e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (8.792500e-04 2.124990e-04 9.807600e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (9.228800e-04 2.149970e-04 9.874700e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (9.369600e-04 2.199960e-04 6.710000e-05 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (9.503200e-04 2.124990e-04 9.694600e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (9.739100e-04 2.149990e-04 8.290300e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.009800e-03 2.199980e-04 6.976100e-05 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.037300e-03 2.124990e-04 8.542400e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.064100e-03 2.124990e-04 7.607200e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.090900e-03 2.149960e-04 8.248400e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.117400e-03 2.124980e-04 6.950500e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.115600e-03 2.124990e-04 9.443900e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (7.643800e-04 2.149970e-04 1.222300e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (8.315600e-04 2.149990e-04 1.258800e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (8.506300e-04 2.149990e-04 1.026300e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (9.025700e-04 2.149990e-04 1.209500e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (9.441600e-04 2.124970e-04 1.276600e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (9.689800e-04 2.124980e-04 1.247000e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (9.907900e-04 2.149990e-04 1.077300e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.017200e-03 2.124980e-04 1.005000e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.007200e-03 2.149970e-04 1.328700e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.058400e-03 2.149990e-04 1.028600e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.035000e-03 2.149980e-04 1.215900e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.061000e-03 2.124990e-04 1.301200e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.090000e-03 2.199980e-04 1.171100e-04 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.124500e-03 2.149960e-04 1.203400e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (7.773000e-04 2.124980e-04 1.463900e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (7.562500e-04 2.124970e-04 1.598800e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (8.074500e-04 2.199990e-04 1.559100e-04 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (8.392100e-04 2.124990e-04 1.567700e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (8.642500e-04 2.199980e-04 1.373700e-04 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (8.963800e-04 2.149970e-04 1.503100e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (9.305200e-04 2.199970e-04 1.561900e-04 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (9.611900e-04 2.124990e-04 1.484600e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (9.853900e-04 2.149970e-04 1.612900e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.045600e-03 2.199960e-04 1.578000e-04 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.079000e-03 2.124990e-04 1.475800e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.105000e-03 2.149980e-04 1.560700e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (7.749800e-04 2.149980e-04 1.798600e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (8.014500e-04 2.124990e-04 1.870500e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (8.292000e-04 2.149970e-04 1.850000e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (8.709400e-04 2.149990e-04 1.808900e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (9.006600e-04 2.149970e-04 1.850000e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (9.251900e-04 2.271590e-04 1.875000e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (9.497300e-04 2.149960e-04 1.850000e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (9.770000e-04 2.124980e-04 1.875000e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.002000e-03 2.124990e-04 1.874100e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.067100e-03 2.124990e-04 1.875000e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.115800e-03 2.149970e-04 1.850000e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.153000e-03 2.149990e-04 1.500500e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.187400e-03 2.199960e-04 1.999800e-05 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.243200e-03 2.149970e-04 1.499900e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.286900e-03 2.149980e-04 1.499900e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.316900e-03 2.149990e-04 1.499900e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.349000e-03 2.124990e-04 1.257100e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.374000e-03 2.124970e-04 1.249800e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.412100e-03 2.149980e-04 2.794400e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.434700e-03 2.124980e-04 1.249900e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.460100e-03 2.124980e-04 1.258700e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.485300e-03 2.124990e-04 1.746200e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.136900e-03 2.124960e-04 5.386500e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.163100e-03 2.149990e-04 4.587100e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.190100e-03 2.124990e-04 5.157800e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.217200e-03 2.149990e-04 3.754600e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.227100e-03 2.124960e-04 6.307400e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.244400e-03 2.124990e-04 4.236300e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.269600e-03 2.124990e-04 4.290100e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.296400e-03 2.124970e-04 4.834600e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.328000e-03 2.199970e-04 4.780200e-05 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.359700e-03 2.124990e-04 3.568700e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.384800e-03 2.124990e-04 3.526300e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.418500e-03 2.124970e-04 5.457900e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.447300e-03 2.199980e-04 4.150700e-05 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.487500e-03 2.124990e-04 4.745600e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.154700e-03 2.149980e-04 7.469500e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.140300e-03 2.124990e-04 9.799300e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.168800e-03 2.124990e-04 9.816300e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.254200e-03 2.149990e-04 6.795200e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.255400e-03 2.149980e-04 9.914000e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.296400e-03 2.199970e-04 8.319300e-05 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.327900e-03 2.124990e-04 8.028000e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.359700e-03 2.199980e-04 7.226900e-05 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.393900e-03 2.149960e-04 6.674400e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.406900e-03 2.124990e-04 9.121100e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.437000e-03 2.199980e-04 8.017300e-05 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.464900e-03 2.124990e-04 9.510100e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.469500e-03 2.149970e-04 6.810200e-05 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.487500e-03 2.219960e-04 8.768200e-05 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.154400e-03 2.149970e-04 1.214600e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.181500e-03 2.124990e-04 1.256400e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.200400e-03 2.199960e-04 1.002100e-04 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.230900e-03 2.149950e-04 1.165400e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.279500e-03 2.149990e-04 1.169500e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.306600e-03 2.124970e-04 1.131000e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.328800e-03 2.149970e-04 1.291300e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.346000e-03 2.171360e-04 1.046000e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.375800e-03 2.149950e-04 1.029500e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.402900e-03 2.199960e-04 1.324900e-04 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.424300e-03 2.124990e-04 1.091700e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.434500e-03 2.124990e-04 1.321800e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.484500e-03 2.124960e-04 1.106100e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.132300e-03 2.124990e-04 1.540200e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.156700e-03 2.124990e-04 1.487500e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.183800e-03 2.149980e-04 1.532200e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.207000e-03 2.175880e-04 1.344900e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.222900e-03 2.199980e-04 1.656300e-04 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.254800e-03 2.199980e-04 1.416000e-04 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.282900e-03 2.124980e-04 1.562100e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.298900e-03 2.124990e-04 1.368800e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.332000e-03 2.149980e-04 1.589600e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.362900e-03 2.199980e-04 1.351900e-04 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.374500e-03 2.124990e-04 1.650100e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.431300e-03 2.220140e-04 1.523200e-04 );
+    radius 1.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.460600e-03 2.149990e-04 1.420900e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.485000e-03 2.149960e-04 1.627200e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.487500e-03 2.146340e-04 1.353400e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.150300e-03 2.199980e-04 1.800000e-04 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.200000e-03 2.124990e-04 1.875000e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.250500e-03 2.124990e-04 1.814800e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.277900e-03 2.149970e-04 1.850000e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.305100e-03 2.149980e-04 1.722300e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.354300e-03 2.149970e-04 1.850000e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.380500e-03 2.231190e-04 1.875000e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.409100e-03 2.199980e-04 1.723200e-04 );
+    radius 2.000000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.443700e-03 2.149960e-04 1.728900e-04 );
+    radius 1.500000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.466900e-03 2.124990e-04 1.875000e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+sphereToCell
+{
+   centre (1.487500e-03 2.266340e-04 1.875000e-04 );
+    radius 1.250000e-05 ;
+    fieldValues
+    (
+        volScalarFieldValue alpha.water 1
+        volScalarFieldValue T 300
+        volScalarFieldValue lf 0
+    );
+}
+
+);
+
+
+// ************************************************************************* //

@@ -1,0 +1,182 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  4.1                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      blockMeshDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+convertToMeters 1e-6;
+
+vertices
+(
+    (0 0 0)            // 0
+    (2200 0 0)         // 1
+    (2200 700 0)      // 2
+    (0 700 0)         // 3
+    (0 0 1350)         // 4
+    (2200 0 1350)      // 5
+    (2200 700 1350)   // 6
+    (0 700 1350)      // 7
+    (2200 1000 1350)   // 8
+    (2200 1000 0)      // 9
+    (0 1000 0)         //10
+    (0 1000 1350)      //11
+);
+
+blocks
+(
+    hex (0 1 2 3 4 5 6 7) (320 98 108)
+	simpleGrading
+    (
+        (                                                                   // x-direction
+            (500 10 0.2) // 0.45 mm y-dir, 10 cells, expansion = 0.2
+            (1200 300 1) // 0.6  mm y-dir, 60 cells, expansion = 1
+            (500 10 5) // 0.45 mm y-dir, 10 cells, expansion = 0.2
+        )
+                          
+        (                                                                   // y-direction 
+            (350 10 0.2) // 0.45 mm y-dir, 10 cells, expansion = 0.2
+            (350 88 1) // 0.6  mm y-dir, 60 cells, expansion = 1
+        )
+        (                                                                   // z-direction 
+            (500 10 0.2) // 0.55 mm z-dir, 10 cells, expansion = 0.05
+            (350 88 1) // 0.2  mm z-dir, 20 cells, expansion = 1
+            (500 10 5) // 0.55 mm z-dir, 10 cells, expansion = 0.05
+        )
+    )
+    hex (3 2 9 10 7 6 8 11) (320 35 108)
+	simpleGrading
+    (
+        (                                                                   // x-direction
+            (500 10 0.2) // 0.45 mm y-dir, 10 cells, expansion = 0.2
+            (1200 300 1) // 0.6  mm y-dir, 60 cells, expansion = 1
+            (500 10 5) // 0.45 mm y-dir, 10 cells, expansion = 0.2
+        )
+                          
+        (                                                                   // y-direction 
+            (100 25 0.2) // 0.45 mm y-dir, 10 cells, expansion = 0.2
+            (200 10 5) // 0.6  mm y-dir, 60 cells, expansion = 1
+        )
+        (                                                                   // z-direction 
+            (500 10 0.2) // 0.55 mm z-dir, 10 cells, expansion = 0.05
+            (350 88 1) // 0.2  mm z-dir, 20 cells, expansion = 1
+            (500 10 5) // 0.55 mm z-dir, 10 cells, expansion = 0.05
+        )
+    )	
+);
+
+edges
+(
+);
+
+boundary
+(
+    top
+    {
+        type patch;
+        faces
+        (
+            (8 9 10 11)
+        );
+    }
+    leftair
+    {
+        type patch;
+        faces
+        (
+            (10 3 7 11)
+       
+        );
+    }
+    leftwall
+    {
+        type wall;
+        faces
+        (
+            
+            (0 4 7 3)
+        );
+    }
+
+    rightair
+    {
+        type patch;
+        faces
+        (
+            (8 6 2 9)
+        );
+    }
+
+    rightwall
+    {
+        type wall;
+        faces
+        (
+            
+            (1 2 6 5)
+        );
+    }
+
+    bottomWall
+    {
+        type wall;
+        faces
+        (
+            
+            (4 0 1 5)
+        );
+    }
+
+    backwall1
+    {
+        type wall;
+        faces
+        (
+            (0 1 2 3)
+        );
+    }
+
+    backwall2
+    {
+        type patch;
+        faces
+        (
+            (2 3 10 9)
+        );
+    }
+
+
+    frontwall1
+    {
+        type wall;
+        faces
+        (
+            (7 4 5 6)
+        );
+    }
+
+    frontwall2
+    {
+        type patch;
+        faces
+        (
+            (11 7 6 8)
+        );
+    }
+
+);
+
+mergePatchPairs
+(
+);
+
+// ************************************************************************* //

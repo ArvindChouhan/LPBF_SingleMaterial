@@ -1,0 +1,68 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1812                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      radiationProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+radiation       on;
+
+radiationModel  laserDTRM;
+
+// Number of flow iterations per radiation iteration
+solverFreq 1;
+
+absorptionEmissionModel localDensityAbsorptionEmission;
+
+localDensityAbsorptionEmissionCoeffs
+{
+	alphaNames (alpha.gas alpha.metal);
+	aCoeff (0 7.7e10);
+	eCoeff (0 0);
+	ECoeff (0 0);
+}
+
+mode	"Gaussian";
+nTheta	100;
+nr 	10;
+
+//focalLaserPosition constant 	(250e-6 400e-6 250e-6);
+
+focalLaserPosition table
+(
+	(0 (600e-6 790e-6 675e-6))
+	(1.66e-3  (1600e-6 790e-6 675e-6))
+);
+
+
+laserDirection constant 	(0 -1 0);
+laserPower			350;   
+sigma				25.09e-6; //  Half of effective (waist) diameter 50.19 um at 0mm defocus   
+focalLaserRadius		35.13e-6;  
+
+scatterModel    none;
+
+sootModel       none;
+
+transmissivityModel none;
+//reflectionModel FresnelLaser;
+
+reflectionModel
+(
+	(gas and metal)
+	{
+    		type            FresnelLaser;
+    		epsilon         0.35;
+	}
+);
+// ************************************************************************* //
